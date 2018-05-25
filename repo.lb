@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+def init(repo):
+    repo.name = "librobots"
+
+def prepare(repo, options):
+    repo.add_modules('src/hall/module.lb')
+    # repo.add_modules(repo.glob("*/module.lb"))

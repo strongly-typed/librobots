@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+def init(module):
+	module.name = "hall"
+
+def prepare(module, options):
+	return True
+
+def build(env):
+	env.copy('src', 'librobots/src/hall')
